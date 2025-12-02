@@ -37,7 +37,7 @@ export default class DrumPad extends React.Component {
       const { label, string, url } = this.state;
       return(
         <div
-          class="drum-pad"
+          className="drum-pad"
           onClick={this.playAudio}
           id={`pad-${string}`}
          >

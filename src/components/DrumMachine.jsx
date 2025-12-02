@@ -72,8 +72,8 @@ export default class DrumMachine extends React.Component {
     return(
       <div id="drum-machine">
         <div id="drum-pad-container">
-          {bank.map(item => {
-            return (<DrumPad data={item} powerStatus={powerStatus}/>)
+          {bank.map((item, id) => {
+            return (<DrumPad data={item} key={id} powerStatus={powerStatus}/>)
           })}
         </div>
         <div id="drum-settings">
